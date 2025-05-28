@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>Maestros del cbtis 206.</title>
+</head>
+<body background="img/azul.jpg">
+<center>
+<font size="5" face="courier" color="#3437fe">
+<h1>Maestros del cbtis 206</h1>
+<div class="app">
+<hr color=black>  
+<p>
+<label for="medicina">Maestros:</label><br>
+<select name="instrumento" id="m" size="1" onchange="medi()">
+<option value="0" selected>Seleccionar</option>
+<option value="1">Alondra Zavala</option>
+<option value="2">Diana Luna</option>
+<option value="3">Francisco Arizona</option>
+<option value="4">Rogelio Sandoval</option>
+<option value="5">Soto Nevares</option>
+</select>
+<br>
+<p>
+<a id="ref1"><img id="img" width="350" height="300"></a>
+<script>
+ 
+    function medi() {
+        var ins = document.getElementById("m").value;
+        if (parseInt(ins) == 0) {
+            document.getElementById("img").src = "img/Alondra.jpg";
+            letras = "no seleccionaste ningun Maestro"
+        }
+ 
+        if (parseInt(ins) == 1) {
+            document.getElementById("img").src = "img/programacion.jpg";
+            document.getElementById("ref1").href="alondra.html";
+            document.getElementById("imprimir").innerHTML= "Alondra Zavala";
+        }
+ 
+        if (parseInt(ins) == 2) {
+            document.getElementById("img").src = "img/quimica.jpg";
+            document.getElementById("ref1").href="diana.html";
+            document.getElementById("imprimir").innerHTML= "Diana Luna"
+        }
+ 
+        if (parseInt(ins) == 3) {
+            document.getElementById("img").src = "img/matematicas.jpg";
+            document.getElementById("ref1").href="francisco.html";
+            document.getElementById("imprimir").innerHTML= "Francisco Arizona"
+        }
+ 
+        if (parseInt(ins) == 4) {
+            document.getElementById("img").src = "img/sociales.png";
+            document.getElementById("ref1").href="rogelio.html";
+            document.getElementById("imprimir").innerHTML= "rogelio sandoval"
+        }
+ 
+        if (parseInt(ins) == 5) {
+            document.getElementById("img").src = "img/ingles.jpg";
+            document.getElementById("ref1").href="soto.html";
+            document.getElementById("imprimir").innerHTML= "Soto Nevares"
+        }
+ 
+        if (parseInt(ins) == 6) {
+            document.getElementById("img").src = "img/5.jpg";
+            letras = "no seleccionaste ningun Medicamento"
+        }
+    }
+ 
+</script>
+ 
+<br>
+<h4 align="center"><b>Mtra. Alondra Zavala - CBTIS 206 - 2025</h4></p>
+ 
+</center>
+ 
+</div>
+ 
+</body>
+</html>
